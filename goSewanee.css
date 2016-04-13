@@ -1,6 +1,8 @@
 html {
 background: linear-gradient(to bottom right,#b380ff, #ffeb80);
 position: relative;
+background-repeat: no-repeat;
+height:100%;
 }
 .button {
   font-family: Tahoma;
@@ -117,19 +119,3 @@ tr,td {
 [type=radio]:checked ~ label ~ .content {
   z-index: 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
