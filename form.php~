@@ -1,0 +1,132 @@
+<?php
+    require_once 'login-turtles.php';
+    $conn = new mysqli($hn, $un, $pw, $db);
+
+    if ($conn->connect_error) die($conn->connect_error);
+
+       if(isset($_POST['name'])  &&
+          isset($_POST['email'])  &&
+          isset($_POST['comments'])  &&
+      isset($_POST['lat']) &&
+      isset($_POST['lng']) &&
+      isset($_POST['time']))
+      
+    {
+      $name  =  get_post($conn, 'name');
+      $email  =  get_post($conn, 'email');
+      $comments  =  get_post($conn, 'comments');
+      $lat =  get_post($conn, 'lat');
+      $lng =  get_post($conn, 'lng');
+      $time =  get_post($conn, 'time');
+     
+      $query_c =  "INSERT INTO citizen(name,email) VALUES" . "('$name','$email')";
+      $result_c  = $conn->query($query_c);
+      if (!$result_c) echo "INSERT failed: $query_c<br>" .
+        $conn->$error . "<br><br>";
+      $query_s =  "INSERT INTO sighting(dateTime,comments,lat,lng) VALUES" . "('$time','$comments','$lat','$lng')";
+      $result_s  = $conn->query($query_s);
+      if (!$result_s) echo "INSERT failed: $query_s<br>" .
+    $conn->$error . "<br><br>";
+      $query_who =  "INSERT INTO whoObservedWhat(cid,sid) VALUES ((SELECT cid from citizen where name='$name' LIMIT 1),(SELECT sid from sighting where comments='$comments' LIMIT 1))";
+      $result_who  = $conn->query($query_who);
+      if (!$result_who) echo "INSERT failed: $query_who<br>" .
+    $conn->$error . "<br><br>";
+    }
+
+    echo <<< _END
+    <link rel="stylesheet" href="style.css">
+  
+    <script  src="http://maps.google.com/maps/api/js"></script>
+    <script  src="map.js"></script>
+
+    <body>   
+   
+    <form action="turtles.php" method="post">
+ 
+    <img src="turtle.jpg">
+  
+     <ul>
+        <li>
+    <h1 style="text-align:center">  Turtle Sightings </h1>
+    <input type="date"  name="time"  class="field-style field-split align-left" placeholder="When did you see the turtle?">
+    <input type="text"  name="name"  class="field-style field-full  align-left"  placeholder="Your name so we know who to thank">
+    <input type="email" name="email" class="field-style field-full  align-left" placeholder="Your email so we can get in touch">
+
+    <textarea name="comments" class="field-style" placeholder="Tells us about your encounter"></textarea>
+  </li>
+
+  <li>
+    <p>Click on map to drop a pin. Drag the pin to a location where the sighting occurred.</p>
+    <div id=map_canvas></div>
+  </li>
+
+  <li> <button>Submit Your Turtle Encounter</button> </li>
+
+  <li>
+    <input type="text"  name="lat" id='latField' class="field-style field-split align-left"  placeholder="Latitude"  readonly="readonly" />
+    <input type="email" name="lng" id='lngField' class="field-style field-split align-right" placeholder="Longitude" readonly="readonly"/>
+  </li>
+  <li> <h3> Scroll down to see who else has encountered a turtle recently. 
+</ul>
+
+    </form>
+    <h2> Turtle sightings in the Sewanee area </h2>
+    </body>
+
+_END;
+
+   $query = "SELECT name,email,dateTime,comments,lat,lng
+             FROM citizen,sighting,whoObservedWhat
+         WHERE citizen.cid=whoObservedWhat.cid
+         AND sighting.sid=whoObservedWhat.sid";
+
+   $result = $conn->query($query);
+   if (!$result) die ("Database access failed: " . $conn->error);
+  
+   $rows = $result->num_rows;
+
+   for($j = 0; $j < $rows; ++$j) {
+      $result->data_seek($j);
+      $row = $result->fetch_array(MYSQLI_NUM);
+   
+      echo <<< _END
+     
+      <pre>
+          <table border="1" style="background:rgb(225,247,219)">
+            <tr>
+              <td> Name </td>
+              <td> <strong> $row[0] </strong> </td>
+            </tr>
+        <tr>
+              <td> Email </td>
+              <td> <strong> $row[1] </strong> </td>
+            </tr>
+            <tr>
+              <td> Date </td>     
+          <td> <strong> $row[2] </strong> </td>
+            </tr>
+           <tr>
+          <td> Comments </td>
+              <td> <strong> $row[3] </strong> </td>
+            </tr>
+        <tr> <td> Latitude </td>
+                 <td> <strong> $row[4] </strong> </td>
+            <tr>
+          <tr>
+                 <td> Longitude </td>
+                 <td><strong> $row[5] </strong> </td>
+            </tr>
+          </table>
+      </pre>
+    
+_END;
+   }    
+
+   $result->close();
+   $conn->close();
+
+   function get_post($conn, $var) {
+      return $conn->real_escape_string($_POST[$var]);
+   }
+
+?>

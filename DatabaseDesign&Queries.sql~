@@ -1,0 +1,72 @@
+
+
+insert into Graphics(School,PossibleAdvisor,Speciality,Area)
+Values('Princeton','Simon Su','Scientific Visualization','North East'),
+('Brown','Jian Chen','Interactive Visualization','North East'),
+('Old Dominion','Hector Garcia','Visual Simulation','North East'),
+('Navy','Mark Livingston','Cognitive decision with Visualization','North East'),
+('Davidson','Tabitha Peck','3D User interfaces','North East'),
+('UC-Irving','Mary Carrillo','3D Games','South West'),
+('UC-Davis','Nina Amenta','Point-Based Rendering','South West'),
+('UC-USC','Grace Benn','Post traumatic stress','South West'),
+('Maryland','Jian Chen','Interactive Visualization','North East');
+
+
+
+insert into AR_VR(School,PossibleAdvisor,Speciality,Area)
+Values('Fairleigh Dickenson','Gurjot Singh','Augmented Reality','North East'),
+('UT-Dallas','Ryan McMahan','Virtual Reality','South Central'),
+('Wisconsin','Ross Tredinnick','Virtual Reality','North Central '),
+('Wyoming','Amy Banic','Virtual Reality','North Central '),
+('Miami-Ohio','Eric Hodgson','Spatial Ability','North East '),
+('Columbia','Steven K. Feiner','Virtual Reality','North East '),
+('Duke','Regis Kopper','Virtual Reality','East Central '),
+('Georgia','Kyle Johnsen','Virtual Reality','South East'),
+('Vanderbilt','Bobby Bodenheimer','Virtual Reality','South East'),
+('Central Florida','Greg Welch','Augmented Reality/Virtual Reality','South East'),
+('UNC-Charlotte','Zach Wartell','Virtual Reality','Central East'),
+('Clemson','Larry Hodges','Virtual Reality','South East'),
+('UNC-Charlotte','Zach Wartell','Virtual Reality','Central East'),
+('UNC-Chappel Hill','Ming Lin','Virtual Reality','Central East'),
+('Virginia Tech','Doug Bowman','Virtual Reality','North East'),
+('Minnesota','Vicki Interrante','Virtual Reality','Central North'),
+('Minnesota-Duluth','Pete Willemsen','Virtual Reality','Central North'),
+('UT-San Antonio','John Quarles','Virtual Reality','Central East'),
+('UNC-Charlotte','Zach Wartell','Virtual Reality','Central East'),
+('UF','Benjamin Lok','Virtual Reality','South East'),
+('Stanford','Bireswar Laha','Virtual Reality','North West'),
+('UC-Santa Barbara','Steffen Gauglitz','Augmented Reality','South East'),
+('Georgia Tech','Blair MacIntyre','Augmented Reality','South East');
+
+
+insert into DivineInterest(School,InterestLevel)
+Values('Princeton',7),
+('Brown',6),
+('Old Dominion',6),
+('Navy',8),
+('Davidson',4),
+('UC-Irving',6),
+('UC-Davis',5),
+('Maryland',7),
+('Farleigh Dickenson',4),
+('UT-Dallas',2),
+('Wisconsin',5),
+('Miami-Ohio',2),
+('Columbia',8),
+('Duke',7),
+('Georgia',9),
+('Vanderbilt',7),
+('Central Florida',7),
+('UNC-Charlotte',7),
+('Clemson',7),
+('UNC-Chapel Hill',8),
+('Virginia Tech',7),
+('Minnesota',4),
+('Minnesota-Duluth',2),
+('UT-San Antonio',4),
+('UNC-Charlotte',4),
+('UF',8),
+('Stanford',7),
+('UC-Santa Barbara',6),
+('Georgia Tech',9);
+

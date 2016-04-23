@@ -1,0 +1,51 @@
+<html>
+<link rel="stylesheet" type="text/css" href="goSewanee.css">
+	<div align= "right"> 
+		<a href="http://hive.sewanee.edu/malond0/CS284/goSewanee/index.html">
+		<button class="button button1">LogOut</button></a>
+		<a href="http://hive.sewanee.edu/malond0/CS284/goSewanee/loginPageMockUp.html">
+		<button class="button button2">Profile</button></a>
+	</div>
+ 	<h1>
+     goSewanee
+  	</h1>
+
+
+	<h2>
+	Hello, User! Please update your interests and personal information here.
+	</h2>
+	<body>
+		<form action="http://hive.sewanee.edu/malond0/CS284/goSewanee/loginPageMockUp.html">
+			  First Name:<br>
+			  <input type="text" name="firstname" value="">
+			  <br>
+			  Last Name:<br>
+			  <input type="text" name="lastname" value="">
+			  <br>
+			  Username:<br>
+			  <input type="text" name="firstname" value="">
+			  <br>
+			  Age: <br>
+			  <input type="text" name="age" value="">
+			  <br>
+			  Password:<br>
+			  <input type="text" name="lastname" value="">
+			 <br>
+			  Verify Password:<br>
+			  <input type="text" name="lastname" value="">
+			  <br><br> 
+	  		<br>Interest:<br>
+			<input type="checkbox" name="event" value="Community Engagement">Community Engagement<br>
+			<input type="checkbox" name="event" value="Lecture">Lecture & Guest Speakers</br>
+			<input type="checkbox" name="event" value="Outdoor">Outdoor<br>
+			<input type="checkbox" name="event" value="Party">Party</br>
+			<input type="checkbox" name="event" value="Performing & Visual Arts">Performing & Visual Arts<br>
+			<input type="checkbox" name="event" value="Sports & Fitness">Sports & Fitness</br>
+			<input type="checkbox" name="event" value="Student Discussions">Student Discussions<br>
+			<input type="checkbox" name="event" value="Other">Other</br>
+	  		<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>
+
+

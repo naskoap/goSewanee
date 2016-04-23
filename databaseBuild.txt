@@ -1,0 +1,35 @@
+
+
+/*
+Divine 
+Nasko
+Grayson
+*/
+
+
+/*
+The user Table provides a 
+*/
+
+
+#Password
+password id - Primary Key not null auto_increment. We chose this because this will keep track of the users and their interest.
+
+
+
+#Event
+
+
+
+
+#Interest
+
+
+
+
+#userPassEvent
+
+
+
+
+#whatEvent

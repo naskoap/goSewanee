@@ -1,0 +1,40 @@
+
+
+/*
+Divine 
+Nasko
+Grayson
+*/
+
+
+/*
+user 
+userid - Primary Key not null auto_increment. We chose this because this will keep track of the users and their interest.
+username -  This will be a unique username for the user that they will use to login. 
+firstName -  
+lastName - 
+age - 
+*/
+
+
+#Password
+password id - Primary Key not null auto_increment. We chose this because this will keep track of the users and their interest.
+
+
+
+#Event
+
+
+
+
+#Interest
+
+
+
+
+#userPassEvent
+
+
+
+
+#whatEvent

@@ -1,0 +1,19 @@
+Divine Maloney
+Nasko Apostolov
+Grayson Ruhl
+
+
+References
+
+1.We chose the colors Purple and Yellow not only for our schools colors but for the fact that yellow signifies : light, optimism,happiness, brightness, and joy.
+Purple: wisdom, sophistication, and celebration.
+We want our users to feel joy when finding the right event for them and and also inclusive to our older users. Purple signifies sophistication and wisdom. Yellow signifies brightness and joy. We chose these colors because they represent various groups: young & old, men & women. Our goSewanee web applet is all inclusive to men,women,children of all ages. 
+http://www.avangate.com/avangate-resources/article/color-web-site.htm
+
+
+2.Font choice deeply affects how a web site is perceived. A font has to be captivating but also easy to read. As a result the typeface must be simplistic with no excessive ornaments. Another reason we decided on the Tahoma font family is because it tackles the challenge of small sizes in dialog boxes. The typeface can be rotated and scaled to different sizes which gives them advantage to less scalable fonts.  
+http://designmodo.com/sans-serif-webfonts/
+
+
+3.HTML and CSS formatting combines these color and font choices, as well as other styling effects, to make its content aesthetically pleasing to users. Without adequate formatting, even the most attractive color and font schemes will fail. We must space out our text and content accordingly, so that the reader's eye follows a logical and beautiful path down the page. This requires editing the padding and spacing of our objects in HTML and CSS alike. Any text effects or colors should be consistent throughout each page of our website.
+http://smallbusiness.chron.com/format-websites-26485.html

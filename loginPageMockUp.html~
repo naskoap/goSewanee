@@ -1,0 +1,58 @@
+<html>
+<link rel="stylesheet" type="text/css" href="goSewanee.css">
+	<div align= "right"> 
+		<a href="http://hive.sewanee.edu/malond0/CS284/goSewanee/goSewanee.html">
+		<button class="button button1">LogOut</button></a>
+		<a href="http://hive.sewanee.edu/malond0/CS284/goSewanee/Settings.html">
+		<button class="button button2">Settings</button></a>
+	</div>
+  <h1>
+     goSewanee
+  </h1>
+
+
+	<h2>
+	Hello, User!<br>
+        Here are events based on your interest!
+	</h2>
+
+	<body>
+		
+		<div class="tabs">
+  		  
+   			<div class="tab">
+       				<input type="radio" id="tab-1" name="tab-group-1" checked>
+       				<label for="tab-1">Today</label>
+       				<div class="content">
+           			Today's events blah blah
+       				</div> 
+   			</div>
+
+			<div class="tab">
+       				<input type="radio" id="tab-2" name="tab-group-1">
+       				<label for="tab-2">Tomorrow</label>
+       				<div class="content">
+           			<p>Tomorrow's events blah blah blah.</p>
+       				</div> 
+  	 		</div>
+
+ 			<div class="tab">
+       				<input type="radio" id="tab-3" name="tab-group-1">
+       				<label for="tab-3">This Week</label>
+       				<div class="content">
+           			<p>This weeks events blah blah blah.</p>
+      				</div> 
+   			</div>
+
+			<div class="tab">
+			       <input type="radio" id="tab-4" name="tab-group-1">
+			       <label for="tab-4">This Month</label>
+			       <div class="content">
+			       <p>This Months blah blah blah.</p>
+			       </div> 
+			</div>
+
+		</div>
+
+	</body>
+</html>

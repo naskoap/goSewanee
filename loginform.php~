@@ -1,0 +1,15 @@
+<html>
+<link rel="stylesheet" type="text/css" href="goSewanee.css">
+<body>
+	<form action="loginPageMockUp.html">
+  		Username:<br>
+  		<input type="text" name="firstname" value="">
+  		<br>
+  		Password:<br>
+  		<input type="text" name="lastname" value="">
+  		<br><br>
+  		<input type="submit" value="Submit">
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+html {
+background: linear-gradient(to bottom right,#b380ff, #ffeb80);
+position: relative;
+}
+.button {
+  font-family: Tahoma;
+  padding: 10px 18px;
+  text-align: center;
+  font-size: 16px;
+  margin: 1px 1px;
+  cursor: pointer;
+}
+.button1,.button2 {
+    background-color: white;
+    color: #330066;
+    border: 1px solid #330066;
+}
+.button1:hover,.button2:hover {
+    background-color: #b385ff;
+}
+h1{
+margin-top: 30px;
+margin-bottom: 30px;
+font-family: Tahoma;
+font-size: 140px;
+color: white;
+    text-shadow: -1px 0 #330066, 
+                 0 1px #330066, 
+                 1px 0 #330066, 
+                 0 -1px #330066;
+  text-align: center;
+  position: relative;
+}
+h2{
+
+margin-top: 40px;
+margin-bottom: 70px;
+
+  font-family: Tahoma;
+  font-size: 50px;
+  text-align: center;
+  position:static;
+  bottom: 70px;
+  color:#ffffff;
+    text-shadow: -0.6px 0 #330066, 
+                 0 0.6px #330066, 
+                 0.6px 0 #330066, 
+                 0 -0.6px #330066;
+}
+h3{
+  font-size: 20px;
+}
+body { 
+  color: #4d0099;
+  font-family: Tahoma;
+  font-size: 1.25rem;
+  text-shadow: none;
+  text-align: left;
+  position:static;
+  bottom:30px;
+}
+table {
+    width: 75%;
+    table {
+        border-collapse: separate;
+        border-spacing: 10px 5px;
+      }
+}
+
+tr,td {
+    text-align: center;
+    width: 50px;
+}
+
+.tabs {
+  float:left;
+  position: relative;  
+  min-height: 200px;
+  clear: both;
+  margin: 25px 0;
+  width:100%;
+  height:75%;
+ 
+}
+
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+  cursor: pointer;
+
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
