@@ -16,7 +16,7 @@
   		Password:<br>
   		<input type="text" name="password_check" value="">
   		<br><br>
-  		<input type="submit" value="Submit">
+  		<input class = "button button1" type="submit" value="Submit">
 	</form>
 	
 <?php
