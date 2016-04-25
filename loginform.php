@@ -18,8 +18,8 @@
   		<br><br>
   		<input class = "button button1" type="submit" value="Submit">
 	</form>
-	
-<?php
+
+<?php /*
 
 	$username = "SELECT username FROM users WHERE username = username_check";
 	$password = "SELECT password FROM users WHERE password = username_check"
@@ -38,7 +38,7 @@
 		echo $UserPassValid;
 	else
 		echo $UserPassError;
-
+*/
 ?>
 
 </body>
