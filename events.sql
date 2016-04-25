@@ -22,7 +22,7 @@ insert into event(name, time, loc, participants)
 	values("Sewaneroo",'2016-04-29', Lake Cheston, 25),
 	      ("LED Conversation",'2016-08-31',Social Lodge, 37),
 	      ("Sips & Saplings",'2016-05-12', Snowden, 58),
-	      ("Phi Sgma Car Wash",'2016-05-29', Bishops Common, 30),
+	      ("Phi Sigma Car Wash",'2016-05-29', Bishops Common, 30),
 	      ("Garden Meditation",'2016-05-14',  Greenhouse, 53),
               ("Environmental Racism,'2016-04-29', Gailor Auditorium, 40),
 	      ("Rain Barrel",'2016-04-29',  Green House, 21),
