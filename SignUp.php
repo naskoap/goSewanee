@@ -29,7 +29,7 @@
 <input type="checkbox" name="event" value="Lecture">Community Engagement</br>
 <input type="checkbox" name="event" value="Party">Guest Speakers<br>
 
-  <input type="submit" value="Submit">
+  <input class="button button1" type="submit" value="Submit">
   
 </form>
 
