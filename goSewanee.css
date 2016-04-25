@@ -52,14 +52,6 @@ margin-bottom: 70px;
 h3{
   font-size: 20px;
 }
-input [type = submit] {
-  font-family: Tahoma;
-  padding: 10px 18px;
-  text-align: center;
-  font-size: 16px;
-  margin: 1px 1px;
-  cursor: pointer;
-}
 body { 
   color: #4d0099;
   font-family: Tahoma;
